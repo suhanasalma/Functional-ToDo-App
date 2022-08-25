@@ -8,6 +8,8 @@ logingButton.addEventListener('click', function(){
    const password = document.getElementById('pass');
    if(email.value==='admin@gmail.com' && password.value ==='user'){
       window.location.href = 'ToDo.html';
+   }else{
+      alert('Kindly provide right information')
    }
 })
 

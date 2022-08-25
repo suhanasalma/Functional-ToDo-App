@@ -1,0 +1,203 @@
+html{
+   font-size: 10px;
+
+}
+
+.body{
+   width: 100vw;
+   height: 100vh;
+}
+
+.wave{
+   position: fixed;
+   z-index: -1;
+   height: 100%;
+   left: 0;
+   bottom: 0;
+   
+}
+
+
+
+.avatar{
+   width: 12rem;
+}
+
+.welcome, .Main-title{
+   font-size: 5rem;
+}
+
+.input{
+   border: none;
+   outline: none;
+   
+   background: transparent;
+   /* border: 1px solid black; */
+}
+.border-bottom{
+   border-bottom-color: #2cc993;
+   border-bottom-style: solid 5px;
+}
+
+
+.icon{
+   color: #2cc993;
+}
+
+.link{
+   text-decoration: none;
+   text-align: end;
+   color:#2cc993;
+
+}
+
+.loging-btn{
+   background-color: #2cc993;
+   color: white;
+}
+
+.form{
+   width: 40rem;
+}
+
+.sing-up{
+   text-decoration: none;
+   color: #2cc993;
+}
+
+.add-cat{
+   width: 18rem;
+   padding: 2.5rem 3.5rem;
+   box-sizing: border-box;
+   background-color: white;
+}
+
+.todo{
+   background-color: #2cc993;
+   color: white;
+}
+
+.to-do-container{
+   background-color: rgba(0, 0, 0, 0.822);
+}
+
+.green-color{
+   color: #2cc993 ;
+}
+
+.to-do-input{
+   background-color: #2cc993;
+   outline: none;
+   border-radius: 1rem;
+}
+
+.to-do-input::placeholder{
+   color: white;
+}
+
+.business{
+   background-color: #75f3c7cd;
+   
+
+}
+
+.personal{
+   background-color: #16e39be4;
+
+}
+ul{
+   list-style: none;
+}
+.li-flex{
+   display: flex;
+   justify-content: space-between;
+   font-size: 2rem;
+   color: white;
+   margin: 1rem 0;
+   padding: 1rem;
+   flex-wrap: wrap;
+   overflow: hidden;
+   
+}
+.inside-li-button{
+   color: white;
+   background:transparent;
+   border: none;
+}
+.checked{
+   background-color: red;
+}
+section{
+   height: fit-content;
+}
+
+@media screen  and (max-width:575px) {
+   .container{
+      flex-direction: column;
+   }
+   .welcome{
+      font-size: 3.5rem;
+   }
+
+   .form{
+      width: 20rem;
+      
+   }
+
+   /* .wave{
+      display: none;
+   } */
+
+   .icon{
+      color: white;
+   }
+   ::placeholder{
+      color: white;
+   }
+   .loging-btn{
+      color: #2cc993;
+      background-color: white;
+   }
+   .member-para{
+      color: white;
+   }
+
+   .link, .member{
+      color:blue;
+   }
+   
+   
+}
+
+
+@media screen  and (min-width:576px) and (max-width:968px){
+   .icon{
+      color: white;
+   }
+   ::placeholder{
+      color: white;
+   }
+   .loging-btn{
+      color: #2cc993;
+      background-color: white;
+   }
+   .member-para{
+      color: white;
+   }
+
+   .link, .member{
+      color:blue;
+   }
+   
+}
+
+@media screen  and (max-width:414px) {
+   .main-container{
+      width: 95%;
+   }
+
+   .cart{
+     flex-direction: column;
+     align-items: center
+   }
+}

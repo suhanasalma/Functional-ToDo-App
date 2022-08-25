@@ -1,3 +1,7 @@
+// ==========================================================================================================================================
+// ======================================================Varifying User  ====================================================================
+
+
 const logingButton = document.getElementById('login-button');
 logingButton.addEventListener('click', function(){
    const email = document.getElementById('email');

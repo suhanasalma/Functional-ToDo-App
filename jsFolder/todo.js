@@ -1,6 +1,7 @@
 const todoInput = document.getElementById('todo-input');
 const ul =document.getElementById('ul');
-
+// ==========================================================================================================================================
+// ====================================================== Creating Li  ================================================================
 function createLi(){
    const li = document.createElement('li');
    li.innerHTML = `<div class= 'li-flex'> 
@@ -12,16 +13,22 @@ function createLi(){
    return li
 
 }
-
+// ==========================================================================================================================================
+// ======================================================Li inner Checked button worked  ====================================================
 
 function checked(el){
    el.parentNode.parentNode.classList.toggle('checked')
   
 }
-
+// ==========================================================================================================================================
+// ======================================================Li inner Deleted button worked  ====================================================
 function deleted (el){
    el.parentNode.parentNode.style.display = 'none'
 }
+
+
+// ==========================================================================================================================================
+// ======================================================Adding Personal category and displaying List  =======================================
 
 const personal = document.getElementById('personal');
 personal.addEventListener('click',function(){
@@ -40,7 +47,8 @@ personal.addEventListener('click',function(){
    }
    
 })
-
+// ==========================================================================================================================================
+// ======================================================Adding business category and displaying List  =======================================
 
 const business = document.getElementById('business');
 business.addEventListener('click',function(){
@@ -60,6 +68,8 @@ business.addEventListener('click',function(){
    
 })
 
+// ==========================================================================================================================================
+// ======================================================Cleared Full List  =======================================
 
 const clearTodo = document.getElementById('clear-todo')
 
